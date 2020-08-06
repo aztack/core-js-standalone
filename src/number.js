@@ -1,0 +1,13 @@
+//number
+require('core-js/modules/es.number.constructor');
+require('core-js/modules/es.number.epsilon');
+require('core-js/modules/es.number.is-finite');
+require('core-js/modules/es.number.is-integer');
+require('core-js/modules/es.number.is-nan');
+require('core-js/modules/es.number.is-safe-integer');
+require('core-js/modules/es.number.max-safe-integer');
+require('core-js/modules/es.number.min-safe-integer');
+require('core-js/modules/es.number.parse-float');
+require('core-js/modules/es.number.parse-int');
+require('core-js/modules/es.number.to-fixed');
+require('core-js/modules/es.number.to-precision');

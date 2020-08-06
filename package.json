@@ -1,0 +1,29 @@
+{
+  "name": "core-js-standalone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-array": "node_modules/.bin/browserify src/array -o dist/array-polyfill.js",
+    "build-date": "node_modules/.bin/browserify src/date -o dist/date-polyfill.js",
+    "build-function": "node_modules/.bin/browserify src/function -o dist/function-polyfill.js",
+    "build-json": "node_modules/.bin/browserify src/json -o dist/json-polyfill.js",
+    "build-map-set": "node_modules/.bin/browserify src/map-set -o dist/map-set-polyfill.js",
+    "build-math": "node_modules/.bin/browserify src/math -o dist/math-polyfill.js",
+    "build-number": "node_modules/.bin/browserify src/number -o dist/number-polyfill.js",
+    "build-object": "node_modules/.bin/browserify src/object -o dist/object-polyfill.js",
+    "build-promise": "node_modules/.bin/browserify src/promise -o dist/promise-polyfill.js",
+    "build-regexp": "node_modules/.bin/browserify src/regexp -o dist/regexp-polyfill.js",
+    "build-string": "node_modules/.bin/browserify src/string -o dist/string-polyfill.js",
+    "build": "npm run build-array && npm run build-date && npm run build-function && npm run build-json && npm run build-map-set && npm run build-math && npm run build-number && npm run build-object && npm run build-promise && npm run build-regexp && npm run build-string"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.6.5"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.2",
+    "uglify-js": "^3.10.1"
+  }
+}
