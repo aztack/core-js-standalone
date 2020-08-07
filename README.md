@@ -17,4 +17,6 @@ npm run build
 
 # Usage
 
-Just copy import dist/npmpkg-*-polyfill as script into Cocos Creator project
+Just import dist/npmpkg-*-polyfill as script into your Cocos Creator project.
+
+Or use with [cc-modules](https://github.com/aztack/cc-modules)
