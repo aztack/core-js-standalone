@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build-symbol": "node_modules/.bin/browserify src/symbol -o dist/npmpkg-symbol-polyfill/symbol-polyfill.js",
     "build-array": "node_modules/.bin/browserify src/array -o dist/npmpkg-array-polyfill/array-polyfill.js",
     "build-date": "node_modules/.bin/browserify src/date -o dist/npmpkg-date-polyfill/date-polyfill.js",
     "build-function": "node_modules/.bin/browserify src/function -o dist/npmpkg-function-polyfill/function-polyfill.js",
@@ -16,9 +17,9 @@
     "build-promise": "node_modules/.bin/browserify src/promise -o dist/npmpkg-promise-polyfill/promise-polyfill.js",
     "build-regexp": "node_modules/.bin/browserify src/regexp -o dist/npmpkg-regexp-polyfill/regexp-polyfill.js",
     "build-string": "node_modules/.bin/browserify src/string -o dist/npmpkg-string-polyfill/string-polyfill.js",
-    "build": "npm run build-array && npm run build-date && npm run build-function && npm run build-json && npm run build-map && npm run build-set && npm run build-math && npm run build-number && npm run build-object && npm run build-promise && npm run build-regexp && npm run build-string && sh ./gen-pkg-json.bash"
+    "build": "npm run build-symbol && npm run build-array && npm run build-date && npm run build-function && npm run build-json && npm run build-map && npm run build-set && npm run build-math && npm run build-number && npm run build-object && npm run build-promise && npm run build-regexp && npm run build-string && sh ./gen-pkg-json.bash"
   },
-  "author": "",
+  "author": "aztack@163.com",
   "license": "ISC",
   "dependencies": {
     "core-js": "3.6.5"
