@@ -1640,18 +1640,6 @@ module.exports = collection('Map', function (init) {
 }, collectionStrong);
 
 },{"../internals/collection":11,"../internals/collection-strong":10}],79:[function(require,module,exports){
-'use strict';
-var collection = require('../internals/collection');
-var collectionStrong = require('../internals/collection-strong');
-
-// `Set` constructor
-// https://tc39.github.io/ecma262/#sec-set-objects
-module.exports = collection('Set', function (init) {
-  return function Set() { return init(this, arguments.length ? arguments[0] : undefined); };
-}, collectionStrong);
-
-},{"../internals/collection":11,"../internals/collection-strong":10}],80:[function(require,module,exports){
-//map&set
+//map
 require('core-js/modules/es.map');
-require('core-js/modules/es.set');
-},{"core-js/modules/es.map":78,"core-js/modules/es.set":79}]},{},[80]);
+},{"core-js/modules/es.map":78}]},{},[79]);
